@@ -1,0 +1,162 @@
+@use '../../styles/color.scss' as Color;
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+.login {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 1px #d3d3d3 solid;
+  border-radius: 20px;
+  width: 443px;
+}
+
+.input {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border: 0;
+  background-color: #f2f2f2;
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 15px;
+  font-family: Vazir;
+}
+
+.button {
+  font-size: 1rem;
+  margin: 10px 0px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  flex: none;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.mainExplanation {
+  margin-bottom: 15px;
+  color: #707070;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  margin: 0px;
+  background-color: black;
+}
+
+.buttonExplanationItems {
+  text-align: right !important;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.bottomExplanationTitle {
+  font-size: 0.7rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.formSwitch {
+  flex: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80px;
+  margin-bottom: 10px;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: Color.$success;
+    cursor: pointer;
+  }
+}
+}
+@media screen and (max-width: $small) {
+.login {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 1px #d3d3d3 solid;
+  border-radius: 20px;
+}
+
+.input {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border: 0;
+  background-color: #f2f2f2;
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 15px;
+  font-family: Vazir;
+}
+
+.button {
+  font-size: 1rem;
+  margin: 10px 0px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  flex: none;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.mainExplanation {
+  margin-bottom: 15px;
+  color: #707070;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  margin: 0px;
+  background-color: black;
+}
+
+.buttonExplanationItems {
+  text-align: right !important;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.bottomExplanationTitle {
+  font-size: 0.7rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.formSwitch {
+  flex: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80px;
+  margin-bottom: 10px;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: Color.$success;
+    cursor: pointer;
+  }
+}
+}

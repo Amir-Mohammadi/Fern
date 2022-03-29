@@ -1,0 +1,85 @@
+@use '../../styles/color.scss' as Color;
+
+
+.imageHref {
+  display: contents;
+  width: inherit;
+}
+.outline {
+  background-color: #ffffff;
+  padding: 9px 55px;
+  border-radius: 14px;
+  font-size: 26px;
+  color: Color.$light;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid Color.$light;
+  box-shadow: none;
+  display: flex;
+  height: fit-content;
+  user-select: none;
+
+  span {
+    margin: 0 8px;
+  }
+}
+
+.block {
+  background-color: Color.$light;
+  display: block;
+  width: 100%;
+  padding: 9px 55px;
+  border-radius: 14px;
+  font-size: 26px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  user-select: none;
+
+  span {
+    margin: 0 8px;
+  }
+}
+
+.rounded {
+  background-color: Color.$light;
+  padding: 9px 55px;
+  border-radius: 500px;
+  font-size: 26px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  height: fit-content;
+  user-select: none;
+
+  span {
+    margin: 0 8px;
+  }
+}
+
+.solid {
+  background-color: transparent !important;
+  padding: 9px 0;
+  border-radius: 14px;
+  font-size: 26px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  height: fit-content;
+  user-select: none;
+
+  span {
+    margin: 0 8px;
+  }
+}

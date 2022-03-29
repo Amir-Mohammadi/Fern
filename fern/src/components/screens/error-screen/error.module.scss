@@ -1,0 +1,47 @@
+.container {
+  flex: 1;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  min-height: 175px;
+  flex-direction: column;
+  .menu {
+    flex: none;
+    height: 55px;
+    background-color: blueviolet;
+  }
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+
+  .sliderBar {
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 865px;
+    width: 1000px;
+    padding: 50.5px 0;
+  }
+}
+
+.footerContainer {
+  flex: none;
+  height: 400px;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+
+  .footer {
+    justify-content: center;
+    background-color: #707070;
+  }
+}

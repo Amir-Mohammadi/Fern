@@ -1,0 +1,276 @@
+@use '../../styles/color.scss' as Color;
+
+$selectedColor: #009289;
+
+// base styling ---------------------------
+
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .tabBar {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    border-bottom: 1px solid #e0e0e2;
+    border-top: 1px solid #e0e0e2;
+    justify-content: center;
+  }
+
+  .tab {
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    cursor: pointer;
+    min-width: 130px;
+    position: relative;
+    height: 60px;
+    border-left: 1px solid #e0e0e2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    background: $selectedColor;
+    height: 5px;
+    margin-top: -2px;
+  }
+
+  .tab:first-child {
+    border-right: 1px solid #e0e0e2;
+  }
+
+  .tabBarText {
+    align-self: center;
+    align-items: center;
+    padding: 20px;
+    min-width: 270px;
+    justify-content: center;
+  }
+
+  .selectedTab::before {
+    opacity: 1;
+  }
+
+  .selectedTab {
+    background: white;
+    margin-bottom: -3px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .itemsContainer {
+    flex-direction: row;
+    width: 1655px;
+    flex: none;
+  }
+
+  // orderTabes Styles -------------------------
+
+  .orderTabesTab {
+    border-left: 0;
+  }
+  .orderTabesTab::before {
+    top: unset;
+    bottom: 0;
+    margin-top: unset;
+    margin-bottom: -2px;
+    background: #db0060;
+  }
+  .orderTabesTab:first-child {
+    border-right: 0;
+  }
+  .orderTabesTabBar {
+    border-top: 0;
+  }
+
+  .orderTabesItemsContainer {
+    flex-direction: row;
+    display: flex;
+    max-width: 1284px;
+  }
+
+  // CheckoutTimeTable Styles -------------------------
+
+  .checkoutTimeTableTab {
+    color: #707070;
+    border-left: 1px solid #707070;
+    flex-grow: 1;
+    max-width: unset;
+  }
+  .checkoutTimeTableTab::before {
+    margin-top: unset;
+    background-color: #db0060;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .checkoutTimeTableTab:last-child {
+    border-left: 0;
+  }
+  .checkoutTimeTableTab:first-child {
+    border-right: 0;
+  }
+  .checkoutTimeTableTabBar {
+    border: unset;
+    border-top: 1px solid #707070;
+
+    background-color: #d3d3d3;
+  }
+
+  .checkoutTimeTableItemsContainer {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+  }
+
+  .tabContent {
+    justify-content: center;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: $small) {
+  .tabBar {
+    list-style: none;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    border-bottom: 1px solid #e0e0e2;
+    border-top: 1px solid #e0e0e2;
+    justify-content: center;
+  }
+
+  .tab {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    position: relative;
+    border-bottom: 1px solid #d3d3d3;
+    height: 60px;
+    border-left: 1px solid #e0e0e2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    background: $selectedColor;
+    height: 5px;
+    margin-top: -2px;
+  }
+
+  .tab:first-child {
+    border-right: 1px solid #e0e0e2;
+  }
+
+  .tabBarText {
+    align-self: center;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+  }
+
+  .tabIcon {
+    display: none;
+  }
+
+  .selectedTab::before {
+    opacity: 1;
+  }
+
+  .selectedTab {
+    background: white;
+    margin-bottom: -3px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .itemsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  // orderTabes Styles -------------------------
+
+  .orderTabesTab {
+    border-left: 0;
+  }
+  .orderTabesTab::before {
+    top: unset;
+    bottom: 0;
+    margin-top: unset;
+    margin-bottom: -2px;
+    background: #db0060;
+  }
+  .orderTabesTab:first-child {
+    border-right: 0;
+  }
+  .orderTabesTabBar {
+    border-top: 0;
+  }
+
+  .orderTabesItemsContainer {
+    flex-wrap: wrap;
+  }
+
+  // CheckoutTimeTable Styles -------------------------
+
+  .checkoutTimeTableTab {
+    color: #707070;
+    border-left: 1px solid #707070;
+    flex-grow: 1;
+    max-width: unset;
+  }
+  .checkoutTimeTableTab::before {
+    margin-top: unset;
+    background-color: #db0060;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .checkoutTimeTableTab:last-child {
+    border-left: 0;
+  }
+  .checkoutTimeTableTab:first-child {
+    border-right: 0;
+  }
+  .checkoutTimeTableTabBar {
+    border: unset;
+    border-top: 1px solid #707070;
+
+    background-color: #d3d3d3;
+  }
+
+  .checkoutTimeTableItemsContainer {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+  }
+
+  .tabContent {
+    justify-content: center;
+  }
+}

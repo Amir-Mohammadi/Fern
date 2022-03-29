@@ -1,0 +1,71 @@
+@use '../../styles//color.scss' as Color;
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+
+    .header {
+      flex: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding-bottom: 12px;
+      font-size: 17px;
+      border-bottom: 1px solid #d3d3d3;
+
+      .navChartDropdown {
+        display: none;
+      }
+    }
+
+    .navChart {
+      flex-direction: column;
+      margin-top: 34.5px;
+
+      .navItem {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+@media screen and (max-width: $small) {
+  .container {
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+
+    .header {
+      flex: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 17px;
+
+      .headBX {
+        flex-direction: column;
+        margin-right: 15px;
+        span {
+          font-size: 13px;
+          color: #707070;
+        }
+      }
+    }
+
+    .navChart {
+      display: none;
+      flex-direction: column;
+      margin-top: 34.5px;
+
+      .navItem {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}

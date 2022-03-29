@@ -1,0 +1,28 @@
+@use '../../styles/color.scss' as Color;
+
+.container {
+  display: flex;
+  padding: 5px 20px;
+  flex-direction: row;
+  border-radius: 30px;
+
+  color: #707070;
+  align-items: center;
+  background-color: #ffffff;
+
+  .iconBX {
+    flex: none;
+  }
+
+  .titleBX {
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.selected {
+  background-color: #e0f7fa;
+  font-weight: normal;
+  color: Color.$success;
+}

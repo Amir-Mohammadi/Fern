@@ -1,0 +1,29 @@
+@use '../../styles/color.scss' as Color;
+
+.alert {
+  background-image: linear-gradient(to right, transparent, Color.$light);
+  flex: 1;
+  border-radius: 5000px;
+  padding: 20px 30px;
+}
+
+.alert span {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.gSuccess {
+  background-image: linear-gradient(to right, transparent, Color.$success);
+}
+
+.gPrimary {
+  background-image: linear-gradient(to right, transparent, Color.$primary);
+}
+
+.gDanger {
+  background-image: linear-gradient(to right, transparent, Color.$danger);
+}
+
+.gWarning {
+  background-image: linear-gradient(to right, transparent, Color.$warning);
+}

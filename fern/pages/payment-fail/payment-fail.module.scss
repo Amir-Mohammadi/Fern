@@ -1,0 +1,16 @@
+.errorbox {
+  padding: 20px 200px;
+  border: 2px #d3d3d3 solid;
+  border-radius: 8px;
+  color: #757575;
+  background-color: #ffafaf;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  flex-direction: column;
+}
+.container {
+  min-height: 590px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+.container {
+  flex-direction: column;
+
+  .inputBX {
+    flex-direction: column;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 20px;
+    .lable {
+      font-size: 16px;
+      font-weight: 300;
+      color: #707070;
+      margin-right: 40px;
+    }
+
+    .valueBX {
+      margin-bottom: 3px;
+      .value {
+        font-size: 16px;
+        color: #707070;
+        margin-right: 40px;
+      }
+
+      .icon {
+        flex: none;
+      }
+    }
+  }
+
+  .inputBX:last-child {
+    border: none;
+  }
+}

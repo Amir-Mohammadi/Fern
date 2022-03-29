@@ -1,0 +1,126 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    position: relative;
+    flex-direction: column;
+
+    .swapper {
+      justify-content: space-between;
+      padding: 0;
+
+      .swipeBtn {
+        flex: none;
+        align-items: center;
+        width: 85px;
+        padding: 0 28px;
+      }
+
+      .scroller {
+        flex: 1 !important;
+        flex-direction: column;
+        align-items: unset !important;
+        justify-content: center;
+
+        .header {
+          flex: none;
+          height: 75px;
+        }
+        span {
+          display: flex;
+          align-self: flex-end;
+          align-items: center;
+
+          a {
+            font-size: 26px;
+          }
+        }
+
+        .loadingDialog {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(255, 255, 255, 0.719);
+          align-items: center;
+          justify-content: center;
+          span {
+            align-self: unset;
+          }
+        }
+
+        .items {
+          display: flex;
+          align-items: center;
+          width: 900px;
+
+          .productItem {
+            flex: none;
+            height: 474px;
+            width: 314px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .container {
+    position: relative;
+    flex-direction: column;
+
+    .swapper {
+      justify-content: space-between;
+      padding: 0;
+
+      .swipeBtn {
+        flex: none;
+        align-items: center;
+      }
+
+      .scroller {
+        flex: 1 !important;
+        flex-direction: column;
+        align-items: unset !important;
+        justify-content: space-evenly;
+
+        .header {
+          flex: none;
+          height: 38px;
+        }
+
+        span {
+          display: flex;
+          align-self: flex-end;
+          align-items: center;
+
+          a {
+            font-size: 12px;
+          }
+        }
+
+        .scrollerContaiter {
+          flex: none;
+
+          .items {
+            flex: none;
+            max-height: 257px;
+            align-items: center;
+            max-width: 20px;
+            justify-content: space-between;
+
+            .productItem {
+              flex: none;
+              height: 257px;
+              width: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

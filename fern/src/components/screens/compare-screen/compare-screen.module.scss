@@ -1,0 +1,122 @@
+@keyframes move {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    .productList {
+      flex: none;
+      width: 1240px;
+      background-color: #fafafa;
+      .productItem {
+        flex: none;
+        position: relative;
+        width: 25%;
+        padding: 0 5px;
+        .productItemOptions {
+          display: none;
+          position: absolute;
+          left: 6px;
+          top: 1px;
+          right: 6px;
+          bottom: 1px;
+          background-color: rgba($color: #000000, $alpha: 0.5);
+          border-radius: 30px;
+          justify-content: center;
+          animation: opacity 0.3s linear forwards;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            padding: 13px;
+            border: none;
+            border-radius: 20px;
+            position: relative;
+            animation: move 0.3s linear forwards;
+          }
+        }
+      }
+
+      .productItem:hover {
+        .productItemOptions {
+          display: flex;
+        }
+      }
+      .addProductBtn {
+        flex: none;
+        width: 25%;
+        align-items: center;
+        justify-content: center;
+        button {
+          border: none;
+          border-radius: 3px;
+          padding: 5px 7px;
+          background-color: #009289;
+          color: #ffffff;
+        }
+      }
+    }
+    .productPropertiesList {
+      flex: none;
+      flex-direction: column;
+      width: 1240px;
+      .propertyItem {
+        flex-direction: column;
+
+        .mainKey {
+          border-bottom: 1px #009289 solid;
+          text-align: center;
+          padding: 10px 0;
+          background-color: #d3d3d3;
+        }
+        .propertyKey {
+          flex-direction: column;
+          margin-top: 10px;
+          .propertyKeyItem {
+            width: fit-content;
+            padding: 5px 10px;
+            border: 1px solid #009289;
+            border-radius: 25px;
+          }
+          .valuesList {
+            .valueGroupe {
+              flex: none;
+              flex-direction: column;
+              width: 25%;
+              span {
+                text-align: center;
+                padding: 7px 0;
+                background-color: #fafafa;
+                margin: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .emptyContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 535px;
+  }
+}

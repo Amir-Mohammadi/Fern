@@ -1,0 +1,33 @@
+@use '../../styles/color.scss' as Color;
+
+.container {
+  height: 105px;
+}
+
+.imageContainer {
+  width: 70px;
+  flex: none;
+  .imageSelection {
+    display: contents;
+    width: inherit;
+  }
+  img {
+    object-fit: cover;
+    width: inherit;
+  }
+}
+
+.cartTags {
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid #707070;
+  max-height: 16px;
+  max-width: 16px;
+  margin: 0 7px;
+  background-color: #d3d3d3;
+  padding: 10px;
+}

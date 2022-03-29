@@ -1,0 +1,25 @@
+.shape {
+  color: #fff;
+  min-width: 1.5em;
+  height: 1.5em;
+  flex: none;
+  font-size: 1rem;
+}
+
+.TextDiv {
+  flex: none;
+  text-align: center;
+  margin: auto;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  height: fit-content;
+  font-size: x-small;
+}
+
+.square {
+  border-radius: 0.1em;
+}
+
+.circle {
+  border-radius: 3em;
+}

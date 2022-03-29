@@ -1,0 +1,25 @@
+.container {
+  flex-direction: row;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 11px;
+  color: #d3d3d3;
+  padding: 23px 0;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.featureContainer {
+  flex-direction: column;
+  border-left: 1px solid #d3d3d3;
+  flex: 1;
+  padding: 0 7px;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  text-align: center;
+}
+
+.featureContainer:last-child {
+  border-left: none;
+}

@@ -1,0 +1,111 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .imageContainer {
+      align-items: center;
+      flex: 1;
+      overflow: hidden;
+
+      img {
+        object-fit: contain;
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .details {
+      flex-direction: column;
+      width: 100%;
+      flex: none;
+      padding: 0 25px;
+      height: 100px;
+      justify-content: space-between;
+
+      .textContainer {
+        flex: none;
+        align-self: flex-start;
+        height: 35px;
+        color: #707070;
+      }
+
+      .offerContainer {
+        flex: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: normal;
+        align-items: center;
+        padding: 5px 0;
+        padding-bottom: 15px;
+
+        .offer {
+          justify-content: flex-end;
+          flex: none;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .container {
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    font-size: 12px;
+    position: relative;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .imageContainer {
+      align-items: center;
+      flex: 1;
+      overflow: hidden;
+
+      img {
+        object-fit: contain;
+        width: 145px;
+        height: 145px;
+      }
+    }
+
+    .details {
+      flex-direction: column;
+      width: 100%;
+      flex: none;
+      padding: 0 10px;
+      height: 130px;
+      justify-content: space-evenly;
+
+      .textContainer {
+        flex: none;
+        align-self: flex-start;
+        color: #707070;
+      }
+
+      .offerContainer {
+        flex: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: normal;
+        align-items: center;
+        padding: 5px 0;
+
+        .offer {
+          justify-content: flex-end;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

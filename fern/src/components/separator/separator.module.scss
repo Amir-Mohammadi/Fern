@@ -1,0 +1,9 @@
+@use '../../styles/color.scss' as Color;
+
+.lineSeparator {
+  height: 0;
+  display: block;
+  width: 100%;
+  border-top: 1px solid Color.$light;
+  margin: 10px 0;
+}

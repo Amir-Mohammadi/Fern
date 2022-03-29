@@ -1,0 +1,43 @@
+@use '../../styles/color.scss' as Color;
+
+.container {
+  height: 67px;
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 50px;
+  .icon {
+    flex: none;
+    margin-right: 25px;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    li {
+      list-style: none;
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+      font-weight: 300;
+    }
+
+    .selected {
+      color: #009289;
+    }
+  }
+}
+
+.icon {
+  flex: none;
+  margin: 0 10px;
+}
+
+.options {
+  justify-content: flex-start;
+
+  div {
+    flex: none;
+    margin: 0 10px;
+    padding: 0 20px;
+  }
+}

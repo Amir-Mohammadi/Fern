@@ -1,0 +1,45 @@
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 130px;
+  .info {
+    padding: 0;
+    .body {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        padding: 5px;
+        padding-right: 0;
+        color: #707070;
+        font-size: 20px;
+      }
+      .description {
+        display: flex;
+        flex-direction: row;
+        .label,
+        .value {
+          font-size: 18px;
+          font-weight: lighter;
+
+          background-color: #f2f2f2;
+          align-items: center;
+          margin: 4px;
+
+          flex: none;
+        }
+        .label {
+          width: 367px;
+          margin-right: 0;
+          span {
+            padding: 19px 5px;
+          }
+        }
+        .value {
+          padding: 19px 5px;
+          width: 703px;
+        }
+      }
+    }
+  }
+}

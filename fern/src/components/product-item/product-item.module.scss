@@ -1,0 +1,234 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    font-size: 12px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .shapeContainer {
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 10px;
+      width: 58%;
+      flex: none;
+      position: absolute;
+      top: -1px;
+    }
+
+    .imageContainer {
+      align-items: center;
+      flex: 1;
+      overflow: hidden;
+
+      img {
+        object-fit: contain;
+        width: 247px;
+        height: 247px;
+      }
+    }
+
+    .details {
+      flex-direction: column;
+      width: 100%;
+      flex: none;
+      padding: 0 25px;
+      height: 150px;
+      justify-content: space-between;
+
+      .textContainer {
+        flex: none;
+        align-self: flex-start;
+        height: 35px;
+
+        color: #707070;
+      }
+
+      .offerContainer {
+        flex: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: normal;
+        align-items: center;
+        padding: 5px 0;
+        padding-bottom: 15px;
+
+        .wareHouse {
+          height: 30px;
+          flex-direction: row;
+          align-items: center;
+          color: #009289;
+        }
+
+        .offer {
+          justify-content: flex-end;
+          flex: none;
+          font-size: 16px;
+
+          .realPrice {
+            align-self: center;
+            color: gray;
+            text-decoration: line-through;
+            padding: 5px;
+          }
+        }
+
+        button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: #ffffff;
+          padding: 5px;
+          border-radius: 20px;
+          background-color: #db0060;
+          border: none;
+          outline: 0;
+        }
+      }
+
+      .deliveryContainer {
+        flex: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: normal;
+        align-items: center;
+        padding: 3px 0;
+        border-top: 1px solid #e6e6e6;
+
+        .delivery {
+          align-self: center;
+          color: #db0060;
+          font-size: 10px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .container {
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    font-size: 12px;
+    position: relative;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .shapeContainer {
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 10px;
+      width: 58%;
+      flex: none;
+      position: absolute;
+      top: -1px;
+    }
+
+    .imageContainer {
+      align-items: center;
+      flex: 1;
+      overflow: hidden;
+
+      img {
+        object-fit: contain;
+        width: 145px;
+        height: 145px;
+      }
+    }
+
+    .details {
+      flex-direction: column;
+      width: 100%;
+      flex: none;
+      padding: 0 10px;
+      height: 130px;
+      justify-content: space-evenly;
+
+      .textContainer {
+        flex: none;
+        align-self: flex-start;
+        color: #707070;
+
+        a {
+          font-size: 12px;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+
+      .offerContainer {
+        flex: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: normal;
+        align-items: center;
+        padding: 5px 0;
+
+        .wareHouse {
+          height: 30px;
+          flex-direction: row;
+          align-items: center;
+          color: #009289;
+          font-size: 6px;
+          font-weight: 200;
+        }
+
+        .offer {
+          justify-content: flex-end;
+          font-size: 14px;
+
+          .realPrice {
+            align-self: center;
+            color: gray;
+            text-decoration: line-through;
+            padding: 5px;
+          }
+        }
+
+        button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: #ffffff;
+          border-radius: 20px;
+          background-color: #db0060;
+          font-size: 7px;
+          font-weight: 200;
+          border: none;
+          outline: 0;
+        }
+      }
+
+      .deliveryContainer {
+        flex: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: normal;
+        align-items: center;
+        padding: 3px 0;
+        border-top: 1px solid #e6e6e6;
+
+        .delivery {
+          align-self: center;
+          color: #db0060;
+          font-size: 10px;
+          padding: 5px;
+          font-size: 7px;
+        }
+      }
+    }
+  }
+}

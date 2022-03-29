@@ -1,0 +1,48 @@
+.container {
+  flex: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  .cardHeader {
+    border-bottom: 1px solid #d3d3d3;
+    color: #707070;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .cardContent {
+    flex-direction: column;
+
+    .rangeSlider {
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+      width: 100%;
+      direction: rtl;
+
+      .labels {
+        .price {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .applyBtn {
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        button {
+          border: none;
+          background-color: #009289;
+          padding: 7px 10px;
+          color: #ffffff;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}

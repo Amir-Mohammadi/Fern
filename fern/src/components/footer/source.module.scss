@@ -1,0 +1,149 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex: none;
+    background-color: #707070;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footerMenu {
+    flex: none;
+  }
+
+  .content {
+    flex: none;
+    flex-direction: column;
+    max-width: 1900px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #707070;
+    color: #ffffff;
+
+    // flex: none /*  */;
+
+    .title {
+      flex: none;
+      flex-direction: column;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .joinTitle {
+      flex-direction: column;
+      justify-content: center;
+      padding: 7px;
+      font-size: 20px;
+    }
+
+    .items {
+      flex: none;
+      flex-direction: column;
+      font-weight: lighter;
+      font-size: 16px;
+
+      a {
+        display: flex;
+        margin-bottom: 5px;
+      }
+    }
+
+    .button {
+      background-color: #fe5252; /* For browsers that do not support gradients */
+      background-image: linear-gradient(#fe5252, #f48fb1);
+      border: 0px solid #fe5252;
+      border-radius: 20px;
+      max-width: 219px;
+      max-height: 39px;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+    }
+  }
+
+  .firstSpan {
+    font-size: 20px;
+  }
+
+  .Logo {
+    height: 88px;
+    width: 204px;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .container {
+    flex: none;
+    flex-direction: column;
+    background-color: #707070;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footerMenu {
+    flex: none;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: none;
+    flex-direction: column;
+    max-width: 1900px;
+    margin: 10px;
+    background-color: #707070;
+    color: #ffffff;
+    padding-bottom: 10px;
+
+    .title {
+      flex: none;
+      flex-direction: column;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .joinTitle {
+      flex-direction: column;
+      justify-content: center;
+      padding: 7px;
+      font-size: 20px;
+    }
+
+    .items {
+      flex: none;
+      flex-direction: column;
+      font-weight: lighter;
+      font-size: 16px;
+
+      a {
+        display: flex;
+        margin-bottom: 5px;
+      }
+    }
+
+    .button {
+      background-color: #fe5252; /* For browsers that do not support gradients */
+      background-image: linear-gradient(#fe5252, #f48fb1);
+      border: 0px solid #fe5252;
+      border-radius: 20px;
+      max-width: 219px;
+      max-height: 39px;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+    }
+  }
+
+  .firstSpan {
+    font-size: 20px;
+  }
+
+  .Logo {
+    height: 88px;
+    width: 204px;
+  }
+}

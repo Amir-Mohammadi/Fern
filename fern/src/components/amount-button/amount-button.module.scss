@@ -1,0 +1,24 @@
+@use '../../styles/color.scss' as Color;
+
+.buttonContainer {
+  height: 34px;
+  border-radius: 34px;
+  border: 1px solid #d3d3d3;
+  flex: none;
+  align-items: center;
+
+  .btn {
+    cursor: pointer;
+    width: 40px;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .num {
+    width: 46px;
+    justify-content: center;
+    color: Color.$success;
+    font-size: 20;
+    user-select: none;
+  }
+}

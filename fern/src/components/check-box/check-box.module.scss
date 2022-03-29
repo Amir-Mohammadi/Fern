@@ -1,0 +1,37 @@
+@use '../../styles//color.scss' as Color;
+
+.checkbox {
+  flex: none;
+  align-items: center;
+}
+
+.checkbox input {
+  height: 12px;
+  width: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid Color.$light;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: white;
+  cursor: pointer;
+}
+
+.checkbox input:checked {
+  border: 1px solid Color.$light;
+  background-color: Color.$success;
+}
+
+.checkbox span {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 200;
+  color: #707070;
+}
+
+.checkbox input:active {
+  border: 2px solid #34495e;
+}

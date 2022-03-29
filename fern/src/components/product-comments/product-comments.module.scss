@@ -1,0 +1,259 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex-direction: column;
+  }
+
+  .commentsContainer {
+    flex-direction: column;
+  }
+
+  .addCommentContainer {
+    flex-direction: column;
+  }
+
+  .questionPart {
+    flex-direction: row;
+    min-height: 230px;
+    height: auto;
+    justify-content: flex-end;
+    .comment {
+      background-color: #f2f2f2;
+      border-radius: 30px;
+      flex: 1;
+      padding: 40px 60px;
+    }
+  }
+  .btnContainer {
+    padding: 20px 0px;
+    margin: 20px 0;
+    flex-direction: row;
+    color: #ffffff;
+
+    .btn {
+      cursor: pointer;
+      flex: none;
+      background-color: #707070;
+      padding: 25px 85px;
+      border-radius: 40px;
+    }
+  }
+
+  .texts {
+    font-family: Vazir;
+    font-weight: 300;
+    outline: 0px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #707070;
+    flex: 1;
+    overflow: hidden;
+    text-align: justify;
+    -webkit-user-select: text;
+    user-select: text;
+    // max-height: 100px;
+    min-height: 35px;
+  }
+
+  .person {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .questionRadius {
+    border-radius: 30px !important;
+  }
+  .questionUpperRadius {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .answerButtonRadius {
+    border-radius: 0 0 30px 30px;
+  }
+
+  .textContainer {
+    flex: 11;
+    background-color: #f2f2f2;
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .compcont {
+    justify-content: space-between;
+    padding-bottom: 60px;
+
+    .rateBX {
+      flex: none;
+      width: 740px;
+      justify-content: center;
+    }
+
+    .commentHelperBX {
+      flex-direction: column;
+      flex: none;
+      padding-left: 100px;
+
+      .title {
+        font-size: 28px;
+        color: #707070;
+        margin-bottom: 30px;
+      }
+
+      .text {
+        font-size: 20px;
+        color: #707070;
+        font-weight: 300;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: $small) {
+  .container {
+    flex-direction: column;
+  }
+
+  .commentsContainer {
+    flex-direction: column;
+  }
+
+  .addCommentContainer {
+    flex-direction: column;
+  }
+
+  .questionPart {
+    flex-direction: row;
+    min-height: 230px;
+    height: auto;
+    justify-content: flex-end;
+    .comment {
+      background-color: #f2f2f2;
+      border-radius: 30px;
+      flex: 1;
+      padding: 40px 60px;
+    }
+  }
+  .btnContainer {
+    padding: 20px 0px;
+    margin: 20px 0;
+    flex-direction: row;
+    color: #ffffff;
+
+    .btn {
+      cursor: pointer;
+      flex: none;
+      background-color: #707070;
+      padding: 25px 85px;
+      border-radius: 40px;
+    }
+  }
+
+  .texts {
+    font-family: Vazir;
+    font-weight: 300;
+    outline: 0px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #707070;
+    flex: 1;
+    overflow: hidden;
+    text-align: justify;
+    -webkit-user-select: text;
+    user-select: text;
+    // max-height: 100px;
+    min-height: 35px;
+  }
+
+  .person {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .questionRadius {
+    border-radius: 30px !important;
+  }
+  .questionUpperRadius {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .answerButtonRadius {
+    border-radius: 0 0 30px 30px;
+  }
+
+  .textContainer {
+    flex: 11;
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    flex-direction: column;
+    .questionInfo {
+      font-size: 13px;
+      color: #d3d3d3;
+      font-weight: 300;
+    }
+  }
+
+  .compcont {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .rateBX {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .commentHelperBX {
+      flex-direction: column;
+      flex: none;
+      align-items: center;
+
+      .title {
+        font-size: 28px;
+        color: #707070;
+        margin-bottom: 30px;
+      }
+
+      .text {
+        font-size: 20px;
+        color: #707070;
+        font-weight: 300;
+        margin-bottom: 40px;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        background-color: #707070;
+        color: #ffffff;
+        padding: 7px 12px;
+        border: none;
+        border-radius: 30px;
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

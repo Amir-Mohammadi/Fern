@@ -1,0 +1,56 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex-direction: row;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 55px 110px;
+  }
+
+  .review {
+    font-family: Vazir;
+    font-weight: 300;
+    outline: 0px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #707070;
+    display: block;
+    overflow: hidden;
+    text-align: justify;
+
+    div {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: $small) {
+  .container {
+    flex-direction: row;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .review {
+    font-family: Vazir;
+    font-weight: 300;
+    outline: 0px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #707070;
+    display: block;
+    overflow: hidden;
+    text-align: justify;
+
+    div {
+      display: block;
+    }
+  }
+}

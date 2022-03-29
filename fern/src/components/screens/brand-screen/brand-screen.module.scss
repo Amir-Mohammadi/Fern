@@ -1,0 +1,45 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+
+  .brand {
+    width: 1640px;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    span {
+      font-size: 25px;
+    }
+  }
+
+  .categoryContent {
+    width: 1640px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    .productList {
+      background-color: #fafafa;
+      border-radius: 9px;
+      flex-wrap: wrap;
+      align-items: center;
+      overflow-y: auto;
+      justify-content: center;
+      .productItem {
+        flex: none;
+        height: 474px;
+        width: 314px;
+        margin: 8px;
+      }
+    }
+    .emptyHandler {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.container {
+  flex: 1;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: center;
+  background-color: #f2f2f2;
+
+  .content {
+    padding-top: 30px;
+    padding-bottom: 175px;
+    flex: none;
+    width: 1655px;
+    align-self: center;
+    background-color: #f2f2f2;
+    .filterBX {
+      flex-direction: column;
+      padding: 0 10px;
+      max-width: 300px;
+
+      .cardBX {
+        flex-direction: column;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        flex: none;
+        background-color: #ffffff;
+        border-radius: 30px;
+        .cardHeader {
+          border-bottom: 1px solid #d3d3d3;
+          padding: 5px;
+          align-items: center;
+          margin: 0 10px;
+
+          span {
+            font-size: 20px;
+            font-weight: normal;
+            color: #707070;
+          }
+        }
+
+        .cardCntent {
+          min-height: 145px;
+        }
+      }
+    }
+
+    .productsBX {
+      flex: none;
+      flex-direction: column;
+      max-width: 1336px;
+      .sortOptionBX {
+        padding: 0 10px;
+        min-width: 1315px;
+        max-height: 67px;
+      }
+
+      .breadCrumbBX {
+        padding-top: 10px;
+        padding-right: 10px;
+        max-height: 30px;
+      }
+    }
+  }
+
+  .footerContainer {
+    flex: none;
+    height: 400px;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+
+    .support {
+      width: 1633px;
+      align-items: center;
+    }
+
+    .footer {
+      justify-content: center;
+      background-color: #707070;
+    }
+  }
+}

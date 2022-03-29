@@ -1,0 +1,11 @@
+.tblResponsive {
+  overflow-x: auto;
+}
+
+.tblResponsive table {
+  flex: 1;
+}
+
+.tblResponsive table thead tr th {
+  text-align: right;
+}

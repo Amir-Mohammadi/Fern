@@ -1,0 +1,299 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7070706e;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    .form {
+      flex: none;
+      flex-direction: column;
+      width: 850px;
+      background-color: #ffffff;
+      border-radius: 20px;
+
+      .formHD {
+        flex: none;
+        height: 70px;
+        border-bottom: 1px solid #d3d3d3;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        button {
+          display: flex;
+          background-color: transparent;
+          width: 25px;
+          align-items: center;
+          border: none;
+          outline: none;
+        }
+      }
+
+      .formBD {
+        flex-direction: column;
+        padding: 10px 20px;
+        .row {
+          justify-content: space-between;
+          margin-bottom: 20px;
+          flex: none;
+          .inputGroup {
+            flex-direction: column;
+            padding-left: 20.5px;
+            padding-right: 20.5px;
+            .inputLabel {
+              flex: none;
+              justify-content: space-between;
+            }
+            span {
+              font-size: 11px;
+              color: #707070;
+              font-weight: 200;
+            }
+            textarea {
+              height: 100px;
+              outline: none;
+              resize: none;
+              border-radius: 18px;
+              border: 1px solid #d3d3d3;
+              padding: 10px;
+              font-family: inherit;
+            }
+            [type='file'] {
+              height: 0;
+              overflow: hidden;
+              max-width: 0px;
+              border: none;
+              background-color: #ffffff;
+              margin-top: 0;
+              outline: none;
+              padding: 0;
+            }
+            [type='file'] + label {
+              display: flex;
+              width: 122px;
+              height: 35px;
+              border-radius: 18px;
+              font-family: inherit;
+              font-size: 15px;
+              color: #ffffff;
+              border: none;
+              outline: none;
+              background-color: #009289;
+              align-items: center;
+              justify-content: center;
+              margin-top: 5px;
+            }
+
+            input {
+              border: 1px solid #d3d3d3;
+              height: 35px;
+              border-radius: 18px;
+              background-color: #ffffff;
+              margin-top: 5px;
+              outline: none;
+              padding: 0 10px;
+              font-family: inherit;
+            }
+
+            .textBox {
+              background-color: #ffffff;
+              border-radius: 18px;
+              margin-top: 5px;
+              min-height: 145px;
+            }
+          }
+
+          .inputGroup:first-child {
+            padding-right: 0;
+          }
+
+          .inputGroup:last-child {
+            padding-left: 0;
+          }
+        }
+      }
+      .formFT {
+        flex: none;
+        height: 50px;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 10px;
+        margin: 5px 0;
+
+        button {
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+        }
+        .danger {
+          background-color: #db0060;
+        }
+
+        .success {
+          background-color: #009289;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $small) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7070706e;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    .form {
+      flex: none;
+      flex-direction: column;
+      width: 75%;
+      background-color: #ffffff;
+      border-radius: 20px;
+
+      .formHD {
+        flex: none;
+        height: 70px;
+        border-bottom: 1px solid #d3d3d3;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        button {
+          display: flex;
+          background-color: transparent;
+          width: 25px;
+          align-items: center;
+          border: none;
+          outline: none;
+        }
+      }
+
+      .formBD {
+        flex-direction: column;
+        padding: 10px 20px;
+        .row {
+          flex: none;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          .inputGroup {
+            flex-direction: column;
+            .inputLabel {
+              flex: none;
+              justify-content: space-between;
+            }
+            span {
+              font-size: 11px;
+              color: #707070;
+              font-weight: 200;
+            }
+            textarea {
+              height: 100px;
+              outline: none;
+              resize: none;
+              border-radius: 18px;
+              border: 1px solid #d3d3d3;
+              padding: 10px;
+              font-family: inherit;
+            }
+            [type='file'] {
+              height: 0;
+              overflow: hidden;
+              max-width: 0px;
+              border: none;
+              background-color: #ffffff;
+              margin-top: 0;
+              outline: none;
+              padding: 0;
+            }
+            [type='file'] + label {
+              display: flex;
+              width: 122px;
+              height: 35px;
+              border-radius: 18px;
+              font-family: inherit;
+              font-size: 15px;
+              color: #ffffff;
+              border: none;
+              outline: none;
+              background-color: #009289;
+              align-items: center;
+              justify-content: center;
+              margin-top: 5px;
+            }
+
+            input {
+              border: 1px solid #d3d3d3;
+              height: 35px;
+              border-radius: 18px;
+              background-color: #ffffff;
+              margin-top: 5px;
+              outline: none;
+              padding: 0 10px;
+              font-family: inherit;
+            }
+
+            .textBox {
+              background-color: #ffffff;
+              border-radius: 18px;
+              margin-top: 5px;
+              min-height: 145px;
+            }
+          }
+
+          .inputGroup:first-child {
+            padding-right: 0;
+          }
+
+          .inputGroup:last-child {
+            padding-left: 0;
+          }
+        }
+      }
+      .formFT {
+        flex: none;
+        height: 50px;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 10px;
+        margin: 5px 0;
+
+        button {
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+        }
+        .danger {
+          background-color: #db0060;
+        }
+
+        .success {
+          background-color: #009289;
+        }
+      }
+    }
+  }
+}

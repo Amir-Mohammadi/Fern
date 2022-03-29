@@ -1,0 +1,45 @@
+@use '../../styles/color.scss' as Color;
+
+.stepContainer {
+  width: 100%;
+  align-items: center;
+}
+
+.line {
+  height: 6px;
+  background-color: Color.$light;
+  width: 100%;
+}
+
+.circle {
+  height: 35px;
+  width: 35px;
+  border: 7px solid Color.$success;
+  background-color: #fff;
+  border-radius: 50%;
+  flex: none;
+}
+
+.circles {
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.progress {
+  height: 6px;
+  position: absolute;
+  background-color: Color.$success;
+}
+
+.titleBar {
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.main {
+  width: 98%;
+  align-items: center;
+  position: relative;
+}

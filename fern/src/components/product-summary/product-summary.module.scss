@@ -1,0 +1,188 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex: none;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    flex-direction: column;
+    font-size: 20px;
+    color: #707070;
+    padding: 24px 0;
+  }
+  .sellerContainer {
+    flex-direction: row;
+    color: #707070;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    flex: none;
+    padding: 15px 8px;
+  }
+  .seller {
+    padding: 0 10px;
+  }
+  .availabilityContainer {
+    flex-direction: column;
+    border-bottom: 1px solid #d3d3d3;
+    flex: none;
+    padding: 18px 8px;
+  }
+  .availability {
+    flex-direction: row;
+    align-items: center;
+
+    // margin-bottom: 8px;
+  }
+  .productSender {
+    flex-direction: row;
+  }
+  .sellerIcon {
+    flex: none;
+    margin-right: 3px;
+  }
+  .detailContainer {
+    flex-direction: column;
+    padding: 0 10px;
+    flex: none;
+    padding-top: 25px;
+  }
+  .fontWeight {
+    font-weight: 200;
+  }
+  .offer {
+    flex-direction: row;
+    align-self: flex-end;
+    padding: 0 20px;
+  }
+  .realPrice {
+    align-self: center;
+    color: #d3d3d3;
+    text-decoration: line-through;
+    padding: 2px 5px;
+  }
+  .discountPrice {
+    align-self: flex-end;
+    padding: 8px 22px;
+    color: black;
+    font-size: 25px;
+  }
+  .addToCart {
+    color: white;
+    background-color: #db0060;
+    border-radius: 14px;
+    align-self: center;
+    justify-content: center;
+    padding: 10px 113px;
+    font-size: 20px;
+    border: none;
+    outline: 0;
+    flex: none;
+    cursor: pointer;
+    .addToCartLabel {
+      cursor: pointer;
+    }
+  }
+  .sellerLabel {
+    padding: 0 18px;
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: $small) {
+  .container {
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    flex-direction: column;
+    font-size: 20px;
+    color: #707070;
+    padding-bottom: 24px;
+  }
+  .sellerContainer {
+    display: none;
+    flex-direction: row;
+    color: #707070;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    flex: none;
+    padding: 15px 8px;
+  }
+  .guaranteeContainer {
+    flex-direction: row;
+    color: #707070;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    flex: none;
+    padding: 15px 8px;
+    font-size: 14px;
+  }
+  .seller {
+    padding: 0 10px;
+  }
+  .availabilityContainer {
+    display: none;
+    flex-direction: column;
+    border-bottom: 1px solid #d3d3d3;
+    flex: none;
+    padding: 18px 8px;
+  }
+  .availability {
+    flex-direction: row;
+    align-items: center;
+
+    // margin-bottom: 8px;
+  }
+  .productSender {
+    flex-direction: row;
+  }
+  .sellerIcon {
+    flex: none;
+    margin-right: 3px;
+  }
+  .detailContainer {
+    flex-direction: column;
+    padding: 0 10px;
+    flex: none;
+    padding-top: 25px;
+  }
+  .fontWeight {
+    font-weight: 200;
+  }
+  .offer {
+    flex-direction: row;
+    align-self: flex-end;
+    padding: 0 20px;
+  }
+  .realPrice {
+    align-self: center;
+    color: #d3d3d3;
+    text-decoration: line-through;
+    padding: 2px 5px;
+  }
+  .discountPrice {
+    align-self: flex-end;
+    padding: 8px 22px;
+    color: black;
+    font-size: 25px;
+  }
+  .addToCart {
+    color: white;
+    background-color: #db0060;
+    border-radius: 14px;
+    align-self: center;
+    justify-content: center;
+    padding: 10px 80px;
+    font-size: 18px;
+    border: none;
+    outline: 0;
+    flex: none;
+    cursor: pointer;
+    .addToCartLabel {
+      cursor: pointer;
+    }
+  }
+  .sellerLabel {
+    padding: 0 18px;
+    font-weight: 200;
+  }
+}

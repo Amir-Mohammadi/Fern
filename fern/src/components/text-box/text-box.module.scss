@@ -1,0 +1,41 @@
+@use '../../styles/color.scss' as Color;
+
+.container {
+  padding: 10px;
+}
+
+.light {
+  border: 1px solid Color.$light;
+  width: 260px;
+  height: 67px;
+  font-size: 16px;
+  outline: none;
+  align-items: center;
+  padding: 0 7px;
+  input {
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    min-height: 100%;
+    display: flex;
+    flex: 1;
+    font-family: Vazir;
+    font-size: 16px;
+  }
+}
+
+.danger {
+  border: 2px solid Color.$danger;
+}
+
+.success {
+  border: 2px solid Color.$success;
+}
+
+.primary {
+  border: 2px solid Color.$primary;
+}
+
+.warning {
+  border: 2px solid Color.$warning;
+}

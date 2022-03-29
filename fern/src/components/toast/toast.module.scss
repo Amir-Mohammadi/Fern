@@ -1,0 +1,26 @@
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  z-index: 100;
+  .itemContainer {
+    flex: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #009289;
+    color: #ffffff;
+    border-radius: 8px;
+    animation: slide-up 0.3s ease;
+  }
+}

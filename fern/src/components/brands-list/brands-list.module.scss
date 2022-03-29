@@ -1,0 +1,44 @@
+.container {
+
+  flex-direction: column;
+  position: relative;
+
+  .brandHD {
+    flex: none;
+    height: 75px;
+  }
+  .brandBD{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .brand {
+      flex: none;
+      width: 190px;
+      height: 190px;
+      background-color: #fff;
+      border-radius: 30px;
+      justify-content: center;
+      margin: 0 30px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+  }
+  
+
+  .loadingDialog{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.719);
+    align-items: center;
+    justify-content: center; 
+    span{
+      align-self: unset;
+    }
+  }
+
+  
+}

@@ -1,0 +1,26 @@
+@use '../../styles/color.scss' as Color;
+
+@keyframes animate-preloader {
+  0% {
+    color: Color.$primary;
+  }
+  25% {
+    color: Color.$danger;
+  }
+  50% {
+    color: Color.$warning;
+  }
+  75% {
+    color: Color.$success;
+  }
+
+  100% {
+    color: Color.$primary;
+  }
+}
+
+.HelloWorld {
+  animation: animate-preloader 3s linear infinite;
+
+  font-size: 2rem;
+}

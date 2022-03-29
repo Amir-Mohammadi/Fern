@@ -1,0 +1,188 @@
+$small: 768px;
+$medium: 900px;
+$large: 1200px;
+
+@media screen and (min-width: $large) {
+  .container {
+    flex-direction: column;
+    flex: 1;
+    max-width: 654px;
+    padding-left: 20px;
+  }
+
+  .imageBox {
+    position: relative;
+    margin-bottom: 21px;
+    border-radius: 30px;
+    border: 1px solid #d3d3d3;
+    flex: none;
+    overflow: hidden;
+    width: 600px;
+    height: 530px;
+  }
+
+  .imageBox img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hoverZoom:hover {
+    transform: scale(2);
+  }
+
+  .imageItems {
+    flex-direction: row;
+    flex: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .imageItems::-webkit-scrollbar {
+    display: none;
+  }
+  .image {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    margin: 0 9px;
+    border-radius: 20%;
+    max-width: 149px;
+    min-width: 141px;
+    height: 149px;
+    overflow: hidden;
+  }
+
+  .image:first-child {
+    margin-right: 0px;
+  }
+
+  .image:last-child {
+    margin-left: 0px;
+  }
+
+  .scroller {
+    overflow-x: auto;
+  }
+
+  .iconBox {
+    position: absolute;
+    flex: 1;
+    direction: ltr;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mainImage {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: none;
+    padding: 30px;
+  }
+
+  .actionIcons {
+    flex: none;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imageBox {
+    position: relative;
+    margin-bottom: 21px;
+    border-radius: 30px;
+    border: 1px solid #d3d3d3;
+    //flex: none;
+    overflow: hidden;
+    flex: 1 0 calc(25% - 10px);
+  }
+  .imageBox:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .imageBox img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .imageItems {
+    flex-direction: row;
+    flex: none;
+  }
+
+  .image {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    margin: 0 9px;
+    border-radius: 20%;
+    max-width: 120px;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  .image:first-child {
+    margin-right: 0px;
+  }
+
+  .image:last-child {
+    margin-left: 0px;
+  }
+
+  .scroller {
+    overflow-x: auto;
+  }
+
+  .iconBox {
+    position: absolute;
+    flex: 1;
+    direction: ltr;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mainImage {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: none;
+    padding: 30px;
+  }
+
+  .actionIcons {
+    flex: none;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

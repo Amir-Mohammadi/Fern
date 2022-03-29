@@ -1,0 +1,40 @@
+.container {
+  height: fit-content;
+  flex: none;
+  width: 360px;
+  flex-direction: column;
+  align-self: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  margin: 20px;
+  font-weight: 400;
+  padding: 15px 18px;
+
+  .top {
+    flex: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d3d3d3;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Icons {
+    align-items: baseline;
+  }
+
+  .pay {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0px;
+    font-weight: lighter;
+  }
+  .middle {
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #707070;
+    padding: 2px 12px;
+    overflow-y: auto;
+    justify-content: space-between;
+    line-height: 2.571;
+    max-height: 420px;
+  }
+}

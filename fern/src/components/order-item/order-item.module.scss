@@ -1,0 +1,88 @@
+.container {
+  height: fit-content;
+  flex: none;
+  width: 100%;
+  border-radius: 30px;
+  flex-direction: column;
+  border: 1px solid #d3d3d3;
+  .top {
+    flex: none;
+    padding: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    flex-direction: row;
+
+    .pay {
+      font-size: 14px;
+      font-weight: bold;
+      color: #707070;
+      align-items: center;
+
+      .circle {
+        border-radius: 4px;
+        height: 7px;
+        width: 7px;
+        flex: none;
+        background-color: #aaaaaa;
+
+        margin: 0 10px;
+      }
+    }
+
+    .show {
+      flex: none;
+      justify-content: flex-end;
+      color: #009289;
+      font-size: 14px;
+      font-weight: bold;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .middle {
+    border-bottom: 1px solid #d3d3d3;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #707070;
+    padding: 20px;
+
+    .orderItem{
+      flex-direction: column;
+    }
+
+    .price {
+      flex: none;
+      flex-direction: column;
+    }
+  }
+
+  .bottom {
+    height: 62px;
+    flex: none;
+    align-items: center;
+
+    .actions {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .deleteButton{
+      background-color: transparent;
+      outline: none;
+      border: none;
+    }
+    .payButton {
+      background-color: #db0060;
+      border: 0px solid #db0060;
+      border-radius: 14px;
+      width: 236px;
+      height: 39px;
+      font-size: 18px;
+      font-weight: 200;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      margin: 0 20px;
+    }
+  }
+}

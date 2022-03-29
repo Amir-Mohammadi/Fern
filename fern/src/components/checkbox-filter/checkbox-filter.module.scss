@@ -1,0 +1,23 @@
+.container {
+  flex: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  .cardHeader {
+    border-bottom: 1px solid #d3d3d3;
+    color: #707070;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .cardContent {
+    flex-direction: column;
+    .checksBX {
+      flex-direction: column;
+      margin: 10px 0;
+    }
+  }
+}

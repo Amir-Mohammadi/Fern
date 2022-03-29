@@ -1,0 +1,80 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 80;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+
+  .pupOpBX {
+    flex: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-width: 50%;
+    max-width: 75%;
+    border-radius: 18px;
+    .popOpHD {
+      flex: none;
+      height: 40px;
+      border-bottom: 1px solid #707070;
+      align-items: center;
+      padding: 0 15px;
+      .title {
+        flex: 1;
+        color: #707070;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .closeBtn {
+        width: 15px;
+        color: #707070;
+      }
+      .closeBtn:hover {
+        color: #db0060;
+      }
+    }
+    .popOpBD {
+      flex: none;
+      background-color: #fafafa;
+      //min-height: 200px;
+      max-height: 700px;
+      overflow-y: auto;
+      padding-bottom: 30px;
+      .content {
+        padding: 10px 15px;
+        padding-bottom: 30px;
+      }
+    }
+    .popOpFT {
+      flex: none;
+      height: 50px;
+      border-top: 1px solid #707070;
+      align-items: center;
+      padding: 0 15px;
+      flex-direction: row-reverse;
+      button {
+        height: fit-content;
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+        background-color: #707070;
+        color: #000000;
+        border-radius: 7px;
+        margin: 0 10px;
+      }
+      .success {
+        background-color: #009289;
+        color: #ffffff;
+      }
+      .danger {
+        background-color: #db0060;
+        color: #ffffff;
+      }
+    }
+  }
+}

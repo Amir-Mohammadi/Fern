@@ -1,0 +1,11 @@
+.container {
+  flex: none;
+  flex-wrap: wrap;
+
+  .product {
+    height: 474px;
+    flex: none;
+    width: 314px;
+    margin: 10px;
+  }
+}
